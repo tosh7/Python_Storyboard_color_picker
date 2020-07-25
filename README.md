@@ -1,0 +1,2 @@
+# Python_Storyboard_color_picker
+Storyboardで使用されている色を抽出してくれるツール
