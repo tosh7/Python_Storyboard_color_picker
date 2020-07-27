@@ -2,17 +2,18 @@ import glob
 import os
 import re
 import yaml
+import rgb_to_hex as rh
 
 def main():
     with open('config/directory.yml') as yml:
         config = yaml.safe_load(yml)['directory']
     storyboard_directories = glob.glob(f"{config}**/*.storyboard", recursive=True)
     dic1 = storyboard_directories[12]
-    # search_color(dic1)
+    search_color(dic1)
 
     # TODO: 一つで取得できたら、戻す 
-    for dic in storyboard_directories:
-        search_color(dic)
+    # for dic in storyboard_directories:
+    #     search_color(dic)
 
 def search_color(dic):
     print('===============================')
@@ -30,5 +31,6 @@ def search_color(dic):
             print(f'red: {red}')
             print(f'green: {green}')
             print(f'blue: {blue}')
+            print(rh.rgb_to_hex(float(red), float(green), float(blue)))
 
 main()
