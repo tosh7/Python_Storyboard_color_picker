@@ -1,9 +1,12 @@
 import glob
 import os
 import re
+import yaml
 
 def main():
     print("hello world")
-    print(glob.glob("/Users/satoshi.komatsu/Desktop/zozotown-ios/zozo/*/*.storyboard"))
+    with open('config/directory.yml', 'r') as yml:
+        config = yaml.load(yml)['directory']
+    print(glob.glob(f"{config}*/*.storyboard"))
 
 main()
