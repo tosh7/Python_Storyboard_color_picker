@@ -14,6 +14,6 @@ made by Python.
 3. use pip3 to install `pyyaml`. make sure yaml directory should be put on right under the Python_Storyboard_color_picker directory.
 4. make a command `python3 main.py` on your terminal, and you will get `file.txt` file which has custom color codes.
 
-## contacts
+## Contacts
 If you have any question about this program, just email me.(zlia.6.lj.425@gmail.com)  
 Or you can contact me via Twitter.[@tosh_3](https://twitter.com/tosh_3)
