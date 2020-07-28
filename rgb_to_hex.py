@@ -1,4 +1,4 @@
 
 def rgb_to_hex(red, green, blue):
-    rgb = (int(255*red), int(255*green), int(255*blue))
+    rgb = (round(255*red), round(255*green), round(255*blue))
     return '#%02x%02x%02x' % rgb
