@@ -10,7 +10,11 @@ made by Python.
 ## How to use
 
 1. clone this repository.
-2. make directoy, which name should be `config`, and make `directory.yml` file. you have to put xcode project directory path that you want to use for.
+2. make directoy, which name should be `config`, and make `directory.yml` file.  put xcode project directory path that you want to use this for.
+such as
+```
+directory: 'your project path'
+```
 3. use pip3 to install `pyyaml`. make sure yaml directory should be put on right under the Python_Storyboard_color_picker directory.
 4. make a command `python3 main.py` on your terminal, and you will get `file.txt` file which has custom color codes.
 
